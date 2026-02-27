@@ -16,7 +16,7 @@
       "type": "application/json"
     }
   ],
-  "custom_attribute": "foo",
+  "custom_attribute": "bar",
   "title": "Example collection",
   "extent": {
     "spatial": {

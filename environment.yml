@@ -1,4 +1,4 @@
-name: stactools-ephemeral
+name: stactools-kyobliques
 channels:
   - conda-forge
   - defaults

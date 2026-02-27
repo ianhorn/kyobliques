@@ -34,7 +34,7 @@ def create_collection() -> Collection:
         title="Example collection",
         description="An example collection",
         extent=extent,
-        extra_fields={"custom_attribute": "foo"},
+        extra_fields={"custom_attribute": "bar"},
     )
     return collection
 
@@ -64,5 +64,5 @@ def create_item(asset_href: str) -> Item:
     """
     item = stactools.core.create.item(asset_href)
     item.id = "example-item"
-    item.properties["custom_attribute"] = "foo"
+    item.properties["custom_attribute"] = "bar"
     return item

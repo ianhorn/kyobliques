@@ -1,4 +1,4 @@
-from stactools.ephemeral import stac
+from stactools.kyobliques import stac
 
 from . import test_data
 
@@ -10,7 +10,7 @@ def test_create_collection() -> None:
     collection = stac.create_collection()
     collection.set_self_href(None)  # required for validation to pass
     assert collection.id == "example-collection"
-    assert collection.extra_fields["custom_attribute"] == "foo"
+    assert collection.extra_fields["custom_attribute"] == "bar"
     collection.validate()
 
 
@@ -20,5 +20,5 @@ def test_create_item() -> None:
 
     item = stac.create_item(test_data.get_path("data/asset.tif"))
     assert item.id == "example-item"
-    assert item.properties["custom_attribute"] == "foo"
+    assert item.properties["custom_attribute"] == "bar"
     item.validate()
