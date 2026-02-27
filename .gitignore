@@ -142,5 +142,10 @@ cython_debug/
 # project specific
 .idea
 .vscode
+.DS_Store
 
-*.gpkg
+# geopackage
+*.gpkg*
+
+# parquet
+*.parquet
