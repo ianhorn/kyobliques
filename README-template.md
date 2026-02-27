@@ -22,6 +22,13 @@ A short description of the package and its usage.
 - [Collection](examples/collection.json)
 - [Item](examples/item/item.json)
 
+## Pre-flight - Download EO Data
+
+```shell
+
+aws s3 sync s3://kyfromabove/imagery/obliques/Phase3/FlightInformationData_GPKG/ eo-info
+```
+
 ## Installation
 
 ```shell
